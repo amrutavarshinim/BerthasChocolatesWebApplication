@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Code by Amruta-->
+  <!--Code by jadrn038-->
+    <meta charset="utf-8">
+    <title>BerthasChocolates.com</title>
+    <link rel="stylesheet" href="mycssfile.css">
+    <link rel="stylesheet" type="text/css" 
+    href="jquery-ui-1.10.2.custom/css/custom-theme/jquery-ui-1.10.2.custom.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="ajax_get_lib.js"></script>
+    <script type="text/javascript" src="order.js"></script>
+    <script type="text/javascript" src="shopping_cart.js"></script>
+    
+</head>
+<body id="orderpage">
+	<header>
+    	<img src="logo1.jpg" alt="Berthas Logo" class="logo" name="logo" />
+    	<h1>Bertha's Deluxe Chocolates</h1>
+	<div id="cart" name="shoppingcart">
+		<img src="cart.png" alt="carticon" width= "50px" class="carticon" name="carticon" /><span id="count"></span>
+	</div>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="order.html">Order Online</a></li> 
+            <li><a href="about.html">About US</a></li>           
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div> 
+    </header>
+    <div id="static">
+    <div id="container">
+    <div id="cartcontent"></div>
+    <div id="costcontent"></div>
+    <div id="dialog-confirm" title="Remove item!!!">
+  <p><span class="ui-icon ui-icon-alert"></span>Are you sure that you want this item removed from the cart?</p>
+</div>
+    <div id="dialog-modal" class="widget-dialog-container" title="Complete Your Order">
+    <form method="post" action="/perl/jadrn038/store_db.cgi">    
+    <div class="shipping_address">
+        <p>Shipping Address</p>
+        <ul>
+        <li class="orderinfo"><label>First Name<span>*</span></label><input type="text" name="shipping_first_name" size="20" maxlength="20" /></li>
+        <li class="orderinfo"><label>Last Name<span>*</span></label><input type="text" name="shipping_last_name" size="20" maxlength="20" /></li>
+        <li class="orderinfo"><label>Address 1<span>*</span></label><input type="text" name="shipping_address1" size="20" maxlength="20" /></li>
+            <li><label>Address 2</label><input type="text" name="shipping_address2" placeholder="optional" size="20" maxlength="20" /></li>
+        <li class="orderinfo"><label>City<span>*</span></label><input type="text" name="shipping_city" size="20" maxlength="20" /></li>
+        <li class="orderinfo"><label>State<span>*</span></label><input type="text" name="shipping_state" size="2" maxlength="2" />
+            <label class="zip">Zip<span>*</span></label><input type="text" name="shipping_zip" size="5" maxlength="5" /></li>
+        <li class="orderinfo"><label>Phone<span>*</span></label><input type="text" name="shipping_phone" size="20" maxlength="20"/></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="billing_address">
+        <p>Billing Address</p>
+        <p><label class="same_as_shipping">Same as Shipping</label><input type="checkbox" name="same_as_shipping" /></p>
+        <ul>
+        <li class="orderinfo"><label>First Name<span>*</span></label><input type="text" name="billing_first_name" size="20" maxlength="20" /></li>
+        <li class="checkout"><label>Last Name<span>*</span></label><input type="text" name="billing_last_name" size="20" maxlength="20" /></li>
+        <li class="orderinfo"><label>Address 1<span>*</span></label><input type="text" name="billing_address1" size="20" maxlength="20" /></li>
+            <li><label>Address 2</label><input type="text" name="billing_address2" placeholder="optional" size="20" maxlength="20" /></li>
+        <li class="orderinfo"><label>City<span>*</span></label><input type="text" name="billing_city" size="20" maxlength="20" /></li>
+        <li class="orderinfo"><label>State<span>*</span></label><input type="text" name="billing_state" size="2" maxlength="2" />
+            <label class="zip">Zip<span>*</span></label><input type="text" name="billing_zip" size="5" maxlength="5" /></li>
+        <li class="orderinfo"><label>Phone<span>*</span></label><input type="text" name="billing_phone" size="20" maxlength="20"/></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="payment">
+        <p>Payment Information</p>
+        <ul>
+            <li><label>Card Type : </label>
+            <select name="card_type">
+                <option>Visa</option>
+                <option>Master Card</option>
+                <option>American Express</option>
+                <option>Discover</option>
+            </select>
+            </li>
+            <li><label>Card Number : </label><input type="text" name="card_number" size="30" maxlength="16"></li>
+            <li><label> Expiration Date : </label><input type="text" name="expiration_date_month" size="5" maxlength="2" placeholder="mm">/<input type="text" name="expiration_date_year" size="7" maxlength="4" placeholder="yyyy"></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <div id=button_panel>  
+            <input type="reset" value="Clear Data" class="button" />
+            <input type="submit" value="Submit Data" id="submit_button" class="button" /> 
+        </div>  
+</form>     
+    <div id="message_line">&nbsp;</div>  
+</div> 
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+* { margin: 0; padding-top: 10px; padding-bottom: 10px; }
+/*code by Amruta Varshini*/
+/*code by jadrn038*/
+
+.logo {
+	display: block;
+	margin: auto;
+	width: 250px;
+	height: auto; }
+
+#static {
+  height: auto;
+	background-image: url(static.jpg);
+  background-size: cover;
+}
+
+h1 {
+    text-align: center;
+	font-family: 'Apple Chancery', monospace;
+	font-size: 40px;
+	width: auto;
+	color : #70380f
+	}
+
+h2 {
+	text-align: center;
+	font-family: 'Apple Chancery', monospace;
+	font-size: 25px;
+	width: auto;
+	color : #70380f
+}
+
+header{
+    padding: 1em;
+    background-color: #DEB887;
+    clear: left;
+    text-align: center;
+    border: 1px solid #70380f
+}
+
+#cart {
+    float: right;
+    }    
+
+#container {
+    min-height: 90%;
+    min-width: 600px;
+    margin: 3% 10% 3% 10%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 2px solid #70380f;
+    position: relative; 
+    } 
+
+#navigation ul {
+	list-style-type: none;
+    text-align: center;
+    }
+    
+#navigation li {
+    display: inline;
+    margin-left: -4px; 
+    background-color: #70380f;   
+    font-size: 17px;
+    }
+    
+#navigation a {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    border: 3px solid #70380f;
+    color:  #e78c4b;
+    background-color: #70380f;
+    }                 
+
+
+#navigation a:hover {
+    color:  #70380f;
+    background-color: #DEB887;
+}
+#navigation a:active {
+    color: #70380f;
+}
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.tab {
+    display: inline;
+    color: #70380f;
+    font-family: 'Apple Chancery', monospace;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%;
+    border: none;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
+p {
+	text-align: center;
+	font-family: 'Apple Chancery', monospace;
+	color: #70380f
+	font-size : 15px;
+}
+
+.item_title {
+  position: relative;
+  margin-left: 20px;
+  font-family: 'Apple Chancery', monospace;
+  font-weight: bold;
+  color: #70380f;
+  float: left;
+}
+
+.checkout_q {
+  position: relative;
+  float: right;
+  padding-right: 3%;
+}
+
+.quantity_span {
+  margin-left: 35px;
+  font-family: 'Apple Chancery', monospace;
+  color: #70380f;
+  font-size : 13px;
+  font-weight: bold;
+}	
+
+.item_category {
+    font-size: small;
+    color: #70380f;
+    height: 100%;
+}
+
+
+#update_quantity {
+  color: #70380f;
+  position: relative;
+  top: 10px;
+  float: right;
+  padding-right: 3%;
+}
+
+#remove_item {
+	color: #70380f;
+  position: relative;
+  top: 10px;
+  float: right;
+}
+
+.quanttext{
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.totalorder {
+	float: center;
+}
+
+.shipping_address{
+  display: inline;
+  float: center;
+}
+
+.billing_address{
+  display: inline;
+  float: center;
+}
+
+.clear { clear: both; }
+
+.payment{
+  float: center;
+}
+
+.button {
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    font-family: helvetica;
+    font-size: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    }         
+    
+#button_panel {
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    }       
+
+div#dialog-modal span {
+    color:red;
+}
+
+ul {
+    list-style-type: none;
+    }
+    
+li {  
+    margin-bottom: 5px;
+    }
+
+.error {
+    border:  1px solid red;   
+    background-color: #FEE;  
+    }
+
+#message_line {
+    height: 50px;
+    color: red;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    }    
+
+#span_addedtocart {
+  display: none;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #70380f;
+}
+
+.lovechocolate{
+  display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body#confirmation {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h5 {
+  text-align: center;
+}
+
+p#address{
+  text-align: center;
+  font-size: 15px;
+}
+
+div#dialog-confirm{
+    float:left; 
+    margin:12px 12px 20px 0;
+    display: none;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
